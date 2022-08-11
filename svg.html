@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="estilo.css" />
+    <link rel="stylesheet" type="text/css" href="estilo3.css" />
+    <link rel="stylesheet" type="text/css" href="estilo2.css" />
+    <title>Graficos Vectoriales</title>
+  </head>
+  <body>
+    <header>
+      <img src="imagenes/fondo.jpg" width="100%" height="600px" />
+    </header>
+    <div style="text-align: center">
+      <nav>
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="listas.html">Listas</a></li>
+          <li><a href="texto.html">Texto</a></li>
+          <li>
+            <a href="enlaces.html">Enlaces</a>
+            <ul>
+              <li><a href="imagenes.html">Imágenes</a></li>
+              <li><a href="video.html">Video</a></li>
+              <li><a href="audio.html">Audio</a></li>
+            </ul>
+          </li>
+
+          <li><a href="formulario.html"> Formularios</a></li>
+          <li><a href="svg.html"> SVG</a></li>
+          <li><a href="animaciones.html"> Animaciones</a></li>
+          <li>
+            <a href="transparencia.html"> Transparencia</a>
+            <ul>
+              <li><a href="">Degradados</a></li>
+            </ul>
+          </li>
+          <li><a href="editable.html">Editable</a></li>
+        </ul>
+      </nav>
+    </div>
+    <br />
+
+    <section>
+        <div id="titulo"><h1>Gráficos Vectoriales</h1></div>
+
+        <div id="definicion">
+          <p>
+            Con el elemento SVG (Scalable Vector Graphics) podemos crear imágenes 
+            vectoriales redimensionables de manera dinámica o interactiva utilizando 
+            diferentes atributos. Al convertirse en 2001 en una recomendación del W3C ya es 
+            aceptado en la mayoría de navegadores (Firefox desde la versión 1.5, Opera desde su 
+            versión 8, Chrome y Safari de manera conjunta, y también increiblemente Internet Explorer,
+             desde su versión 9).Estos atributos son rect (para crear rectángulos), circle (que no hace
+              falta traducir), line, ellipse, polygon, polyline (multi-lineas) y text.
+          </p>
+        </div>
+
+        <div id="svg"> 
+            <svg width="150" height="90" xmlns="http://www.w3.org/2000/svg">
+            <rect width="150" height="90"  fill="white" stroke="black" stroke-width="1"/>
+            <circle cx="75" cy="45" r="35" fill="red"/>
+          </svg>
+
+          <svg width="150" height="90" xmlns="http://www.w3.org/2000/svg">
+            <rect width="150" height="90"  fill="green" stroke="black" stroke-width="1"/>
+            <rect x="50" y="1" width="50" height="90" fill="white"/>
+            <rect x="100" y="1" width="50" height="90" fill="red"/>
+          </svg>
+
+          <svg width="150" height="90" xmlns="http://www.w3.org/2000/svg">
+            <rect width="150" height="90"  fill="red" stroke="black" stroke-width="1"/>
+            <rect x="40" y="33" width="70" height="24" fill="white"/>
+            <rect x="63" y="10" width="24" height="70" fill="white"/>
+          </svg>
+        </div>
+
+
+        <p>Lo primero y obligatorio es agrupar todos los atributos dentro de un "svg".
+            Cabe decir que en los casos de Catalunya y Noruega (de los ejemplos superiores) los 'rect'
+             utilizados no se han encerrado en un "svg" para no romper la maquetación que iguala a todas las banderas,
+         pero para que su código sea correcto debe estar contenido entre un "svg" y un "svg". </p>
+
+         <br>
+
+         <div style="text-align: center">
+            <img src="imagenes/svg.jpg" alt="" width="60%" height="60%" />
+          </div>
+
+          <br>
+
+          <ul class="centrar-listas">
+            <li>
+              <h2 id="titulosvg">Atributos</h2>
+                   <br>
+              <ul>
+                <li>height: Altura del rectángulo.</li>
+                <li>width: Anchura del rectángulo.</li>
+                <li>x: Coordenada horizontal desde donde se va a empezar a dibujar el rectángulo.</li>
+                <li>y: Coordenada vertical desde donde se va a empezar a dibujar el rectángulo.</li>
+                <li>rx: Suavidad de los bordes horizontales (el valor 0 equivale a esquinas puntiagudas "no redondeadas").</li>
+                <li>ry: Suavidad de los bordes verticales (el valor 0 equivale a esquinas puntiagudas "no redondeadas").</li>
+                <li>opacity: Opacidad (0 es transparencia total y 1 opacidad total).</li>
+                <li>stroke-width: Grosor de la línea (en píxeles).</li>
+                <li>stroke: Color de la línea que rodea al rectángulo.</li>
+                <li>fill: Color del relleno (en código hexadecimal o escribiendo directamente el nombre del color).</li>
+
+              </ul>
+            </li>
+          </ul>
+        </div>
+
+        
+
+        <div style="text-align: center">
+            <img src="imagenes/cuadrado.jpg" alt="" width="10%" height="10%" />
+            <img src="imagenes/circulo.jpg" alt="" width="8%" height="8%" />
+            <img src="imagenes/ovalo.jpg" alt="" width="10%" height="10%" />
+            <img src="imagenes/casa.jpg" alt="" width="10%" height="10%" />
+            <img src="imagenes/estrella.jpg" alt="" width="10%" height="10%" />
+          </div>
+
+           
+     
+    </section>
+    <aside class="inicio2"></aside>
+    <footer></footer>
+  </body>
+</html>

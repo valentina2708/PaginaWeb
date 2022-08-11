@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="estilo.css" />
+    <link rel="stylesheet" type="text/css" href="estilo2.css" />
+    <title>Video</title>
+  </head>
+  <body>
+    <header>
+      <img src="imagenes/fondo.jpg" width="100%" height="600px" />
+    </header>
+    <div style="text-align: center">
+      <nav>
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="listas.html">Listas</a></li>
+          <li><a href="texto.html">Texto</a></li>
+          <li>
+            <a href="enlaces.html">Enlaces</a>
+            <ul>
+              <li><a href="imagenes.html">Imágenes</a></li>
+              <li><a href="video.html">Video</a></li>
+              <li><a href="audio.html">Audio</a></li>
+            </ul>
+          </li>
+
+          <li><a href="formulario.html"> Formularios</a></li>
+          <li><a href="svg.html"> SVG</a></li>
+          <li><a href="animaciones.html"> Animaciones</a></li>
+          <li>
+            <a href="transparencia.html"> Transparencia</a>
+            <ul>
+              <li><a href="">Degradados</a></li>
+            </ul>
+          </li>
+          <li><a href="editable.html">Editable</a></li>
+        </ul>
+      </nav>
+    </div>
+    <br />
+
+    <section>
+      <div id="titulo">
+        <h1>Video</h1>
+      </div>
+
+      <br />
+
+      <div id="definicion">
+        <p>
+          En HTML5 se introduce la interesante posibilidad de mostrar videos
+          directamente desde nuestro navegador. De hecho, si arrastramos un
+          video a la ventana del navegador, veremos que comienza a reproducirse
+          en él. Para poder insertar videos en nuestras páginas HTML tenemos que
+          utilizar la etiqueta video>, que junto a la etiqueta source podremos
+          utilizar estas capacidades multimedia de HTML5.
+        </p>
+      </div>
+
+      <div style="text-align: center">
+        <img src="imagenes/flechaiz.jpg" alt="" width="12%" height="12%" />
+        <img src="imagenes/video.jpg" width="70%" height="70%" />
+      </div>
+      <br />
+      <br />
+
+      <h1 id="titulo">Estandares de video</h1>
+
+      <hr />
+
+      <div id="video">
+        <h2>Formato por Descarga</h2>
+        <video
+          controls
+          autoplay
+          width="650"
+          height="500"
+          loop
+          preload
+          poster="imagenes/queeshtml.webp"
+        >
+          <source src="Que es html.mp4" type="video/mp4" />
+        </video>
+        <br />
+        <br />
+        <hr />
+        <br>
+        <h2>Formato por Youtube</h2>
+        <br />
+        <br />
+        <iframe
+          width="560"
+          height="415"
+          src="https://www.youtube.com/embed/1LTzUf327cQ"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer;
+               autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        ></iframe>
+      </div>
+
+      <br />
+    </section>
+    <aside class="inicio2"></aside>
+    <footer></footer>
+  </body>
+</html>
